@@ -78,7 +78,7 @@ const Dauber: React.FC = () => {
                 </button>
               </p>
             </div>
-            <div className="space-y-6 text-base leading-relaxed">
+            <div className="space-y-6 text-base leading-relaxed text-justify">
               {content[language].description.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
