@@ -4,8 +4,6 @@
   "description": "Project description",
   "main": "index.mjs",
   "scripts": {
-    "prebuild": "pnpm -s agent:builder:validate && pnpm -s agent:builder:generate",
-    "postbuild": "node ./scripts/postbuild.mjs",
     "dev": "next dev --hostname 0.0.0.0 --port 3000",
     "dev:kb": "pnpm kb:build && pnpm dev",
     "dev:mcp": "node -e \"console.log('\\n📘 MCP Local Dev Guide: docs/operations/mcp-local-dev.md\\n\\n1. Start MCP servers manually (see guide for commands)\\n2. Dev server will start on port 3000\\n')\" && pnpm dev",
@@ -102,7 +100,6 @@
     "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "^7.27.1",
     "@modelcontextprotocol/server-memory": "^2025.11.25",
-    "@redocly/openapi-cli": "1.0.0-beta.95",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",

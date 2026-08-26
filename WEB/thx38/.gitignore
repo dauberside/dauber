@@ -1,7 +1,5 @@
 .vercel
-.next
 node_modules
+.next
 .DS_Store
-.env
-.env.*
-!.env.example
+next-env.d.ts
