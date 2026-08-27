@@ -29,7 +29,6 @@ const ContactForm = ({ isOpen, onRequestClose, autoCloseAfterMs = 2500 }) => {
 
   // 入力監視（残り文字数表示用）
   const messageValue = watch("message") || "";
-  const remaining = 140 - (messageValue?.length || 0);
 
   // フォームのリセットは先に定義して、以降のhooksで安全に参照できるようにする
   const handleReset = useCallback(() => {
@@ -241,8 +240,8 @@ const ContactForm = ({ isOpen, onRequestClose, autoCloseAfterMs = 2500 }) => {
                   errors.message ? "message-error" : "message-help"
                 }
               />
-              <div id="message-help" className="text-xs text-muted-foreground">
-                残り {remaining} 文字（最大 140 文字）
+          <div id="message-help" className="text-right text-xs text-muted-foreground">
+            {messageValue.length} / 140
               </div>
               {errors.message && (
                 <p
