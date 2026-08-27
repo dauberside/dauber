@@ -77,6 +77,7 @@ export const HeaderNew: React.FC<{ className?: string }> = ({
                   alt="Logo"
                   width={100}
                   height={50}
+                  priority
                   className="w-[30px] h-auto"
                 />
               </a>
