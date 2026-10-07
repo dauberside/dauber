@@ -53,7 +53,7 @@ const Dauber: React.FC = () => {
   return (
     <div className="min-h-screen bg-[rgb(0,14,40)] text-white font-sans">
       <Header />
-      <main className="w-full max-w-[1140px] mx-auto px-[50px] py-6">
+      <main className="w-full max-w-[1140px] mx-auto px-[16px] md:px-[50px] py-6">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-8">
           {/* Left Column */}
           <div className="col-span-1 lg:col-span-2">
@@ -85,7 +85,7 @@ const Dauber: React.FC = () => {
             </div>
           </div>
           {/* Right Column */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1 lg:col-span-2 lg:pt-[32px]">
             <div className="text-white font-mono text-sm">
               <div className="grid grid-cols-6 gap-4 py-2 border-t  border-gray-700 pb-2">
                 <div className="px-2 col-span-2">Project</div>

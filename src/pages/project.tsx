@@ -21,7 +21,7 @@ const Project = () => {
       </Head>
       <Header />
       <main>
-        <div className="w-full max-w-[1140px] mx-auto px-[50px] py-6">
+        <div className="w-full max-w-[1140px] mx-auto px-[16px] md:px-[50px] py-6">
           {
             <Link href="/dauber" legacyBehavior>
               <a>

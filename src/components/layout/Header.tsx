@@ -68,7 +68,7 @@ export const HeaderNew: React.FC<{ className?: string }> = ({
   return (
     <>
       <header id="header" className={className}>
-        <div className="w-full max-w-[1140px] mx-auto px-[50px] flex items-center justify-between py-6">
+        <div className="w-full max-w-[1140px] mx-auto px-[16px] md:px-[50px] flex items-center justify-between py-6">
           <div id="logo" className="flex items-center gap-4">
             <Link href="/" legacyBehavior>
               <a className="inline-flex items-center">
